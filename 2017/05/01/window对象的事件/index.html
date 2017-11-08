@@ -1,0 +1,297 @@
+<!DOCTYPE HTML>
+
+    <script type="text/javascript" src="/live2d/script.js"></script>
+    <canvas id="live2dcanvas" width="150" height="300" class="live2d"></canvas>
+    <style>
+      #live2dcanvas {
+        position: fixed;
+        right: 0px;
+        z-index: 999;
+        pointer-events: none;
+        bottom: -60px;
+      }
+    </style>
+    <script>loadlive2d("live2dcanvas" ,"/live2d/assets/miku/miku.model.json",0.5)</script>
+  
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	 <link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			
+    <title>
+    Hy小胖纸
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+
+			    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">HY小胖纸</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/学习/">学习</a></li><li><a class="category-link" href="/categories/学习/动态网页编程/">动态网页编程</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/miccall" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(../images/dyn1.gif);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >javascript 对象的事件</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="window对象的事件"><a href="#window对象的事件" class="headerlink" title="window对象的事件"></a>window对象的事件</h1><p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="830" height="86" src="//music.163.com/outchain/player?type=2&id=512359558&auto=1&height=66"></iframe></p>
+<ul>
+<li><p>onscroll 当浏览器滚动的时候触发</p>
+</li>
+<li><p>onresize 当浏览器窗口改变大小时触发</p>
+</li>
+<li><p>鼠标的滚轮事件：</p>
+<ul>
+<li><p>注册滚轮事件的兼容写法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">if(document.addEventListener)&#123;//firefox</div><div class="line">	&quot;DOMMousescro&quot;,&quot;fn&quot;,false</div><div class="line">	&#125;</div><div class="line"> window.onmousewheel = document.onmousewheel = scrollFunc; //ie和谷歌</div></pre></td></tr></table></figure>
+</li>
+<li><p>判断滚轮方向</p>
+<ul>
+<li>e.wheelDelta //ie和谷歌</li>
+<li>e.delta //火狐</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h1><ul>
+<li><p>概念：</p>
+<blockquote>
+<p>“Cookie” 是小量信息，某些 Web 站点在您的硬盘上用很小的文本文件存储的信息，下次访问该站点时，可从浏览器读回此信息。</p>
+</blockquote>
+</li>
+<li><p>作用：保存数据到客户端浏览器 。可用于：保存用户登录状态、跟踪用户行为（如保存地区）、定制页面样式、创建购物车</p>
+</li>
+<li><p>限制：每个域最多保存50个cookie，单个cookie大小不能超<br>过4k</p>
+</li>
+<li><p>储存方式：document.cookie = ‘ 名字＝值; expires=过期时间’;</p>
+<ul>
+<li>在cookie的名或值中不能使用分号（;）、逗号（,）、等号（=）以及空格，所以存储时需用escape()函数进行编码，它能将一些特殊符号使用十六进制表示，取用时再用unescape反编码</li>
+<li>过期时间是以GMT格式表示的时间字符串，超过这个时间，cookie将消失，过期时间设置为：当前时间+过期天数<em>24</em>3600*1000</li>
+</ul>
+</li>
+</ul>
+<h1 id="历史记录"><a href="#历史记录" class="headerlink" title="历史记录"></a>历史记录</h1><blockquote>
+<p>当浏览器的URL发送改变时，浏览器会记录相应的地址记录以生成历史记录，让浏览器可以前进后退，同时 window 的history对象提供了相应的操作方法。</p>
+</blockquote>
+<ul>
+<li>back() 退一步，类似在浏览器的工具栏上点击返回按钮</li>
+<li>forward() 前进一步，类似在浏览器中点击前进按钮</li>
+<li>go() 跳转到相应页，当前页面位置索引值为0，上一页就是-1，下一页为1</li>
+</ul>
+<h1 id="iframe操作"><a href="#iframe操作" class="headerlink" title="iframe操作"></a>iframe操作</h1><ul>
+<li>操作子页面<br>document.getElementById(‘iframe的ID’).contentWindow.document.getElementById(‘ 元素的ID’)</li>
+</ul>
+<ul>
+<li>操作父页面<br>window.parent.document.getElementById(‘ 元素的ID’)</li>
+<li>操作顶级页面<br>window.top.document.getElementById(‘ 元素的ID’)</li>
+</ul>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2017/05/01/window对象的事件/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/05/01/window对象的事件/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2017总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+<!--PC版-->
+<div id="SOHUCS" sid="title"></div>
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: 'cyti2Pt4c',
+        conf: 'prod_4d708f848dfd9870b4f74b3811c72c0c'
+    });
+</script>
+</html>

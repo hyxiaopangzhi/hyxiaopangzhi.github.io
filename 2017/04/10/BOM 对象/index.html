@@ -1,0 +1,330 @@
+<!DOCTYPE HTML>
+
+    <script type="text/javascript" src="/live2d/script.js"></script>
+    <canvas id="live2dcanvas" width="150" height="300" class="live2d"></canvas>
+    <style>
+      #live2dcanvas {
+        position: fixed;
+        right: 0px;
+        z-index: 999;
+        pointer-events: none;
+        bottom: -60px;
+      }
+    </style>
+    <script>loadlive2d("live2dcanvas" ,"/live2d/assets/miku/miku.model.json",0.5)</script>
+  
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	 <link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			
+    <title>
+    Hy小胖纸
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+
+			    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">HY小胖纸</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/学习/">学习</a></li><li><a class="category-link" href="/categories/学习/动态网页编程/">动态网页编程</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/miccall" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(../images/dyn1.gif);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >javascript Bom 对象</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="Window-对象"><a href="#Window-对象" class="headerlink" title="Window 对象"></a><strong>Window 对象</strong></h1><p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="830" height="86" src="//music.163.com/outchain/player?type=2&id=512359558&auto=1&height=66"></iframe><br><strong>##概念：</strong></p>
+<blockquote>
+<p><strong>Window 对象表示浏览器中打开的窗口。如果文档包含框架（frame 或 iframe 标签），浏览器会为 HTML 文档创建一个 window 对象，并为每个框架创建一个额外的 window 对象</strong></p>
+<h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a><strong>属性</strong></h2><ul>
+<li><strong>innerHeight 返回窗口的文档显示区的高度</strong></li>
+<li><strong>innerWidth 返回窗口的文档显示区的宽度</strong></li>
+<li><strong>outerHeight 返回窗口的外部高度 包括滚动条、地址栏、收藏栏等</strong></li>
+<li><strong>outerwidth 返回窗口的外部宽度</strong></li>
+<li><strong>length 设置或返回窗口中的框架数量</strong></li>
+<li><strong>name 设置或返回窗口的名称。</strong><ul>
+<li><strong>window.open() 打开的新网页，第二个参数就是此网页的name。</strong></li>
+<li><strong>iframe里面，name属性就是window的name</strong></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a><strong>方法</strong></h2><ul>
+<li><strong>close() 关闭浏览器窗口</strong></li>
+<li><strong>alert() 显示带有一段消息和一个确认按钮的警告框</strong></li>
+<li><strong>confirm() 显示带有一段消息以及确认按钮和取消按钮的对话框</strong></li>
+<li><strong>prompt()显示可提示用户输入的对话框</strong></li>
+<li><strong>open() 打开一个新的浏览器窗口或查找一个已命名的窗口</strong></li>
+<li><strong>resizeBy() 按照指定的像素调整窗口的大小</strong></li>
+<li><strong>resizeTo() 把窗口的大小调整到指定的宽度和高度</strong></li>
+<li><strong>scrollBy() 按照指定的像素值来滚动内容</strong></li>
+<li><strong>scrollTo() 把内容滚动到指定的坐标</strong></li>
+</ul>
+<h1 id="navigator对象"><a href="#navigator对象" class="headerlink" title="navigator对象"></a><strong>navigator对象</strong></h1><blockquote>
+<p><strong>navigator对象通常用于检测浏览器不操作系统的版本</strong></p>
+<p><strong>##属性：</strong></p>
+<ul>
+<li><strong>appCodeName返回浏览器的代码名</strong></li>
+<li><strong>appVersion返回浏览器的次级版本</strong></li>
+<li><strong>appName返回浏览器的名称</strong></li>
+<li><strong>language返回当前浏览器的语言</strong></li>
+<li><strong>platform 返回运行浏览器的操作系统平台</strong></li>
+</ul>
+</blockquote>
+<h1 id="document对象"><a href="#document对象" class="headerlink" title="document对象"></a><strong>document对象</strong></h1><blockquote>
+<p><strong>document 对象是 Window 对象的一部分，包含整个htmlDOM,可通过 window.document 属性对其进行访问,也可以用document直接访问</strong></p>
+</blockquote>
+<p><strong>##属性:</strong></p>
+<ul>
+<li><strong>document.cookie 获取或设置cookie</strong></li>
+<li><strong>document.title 获取或设置title</strong></li>
+<li><strong>document.URL 获取或设置URL</strong></li>
+</ul>
+<h2 id="window下的其他对象"><a href="#window下的其他对象" class="headerlink" title="window下的其他对象"></a><strong>window下的其他对象</strong></h2><blockquote>
+<p><strong>screen 对象包含有关客户端显示屏幕的信息</strong></p>
+</blockquote>
+<h3 id="属性-1"><a href="#属性-1" class="headerlink" title="属性"></a><strong>属性</strong></h3><ul>
+<li><strong>height 返回显示屏幕的高度； width返回显示器屏幕的宽度</strong></li>
+<li><strong>availHeight 返回显示屏幕的高度 (除 Windows 任务栏之外)</strong></li>
+<li><strong>availWidth 返回显示屏幕的宽度 (除 Windows 任务栏之外)</strong></li>
+<li><strong>colorDepth 返回目标设备或缓冲器上的调色板的比特深度</strong></li>
+<li><strong>pixelDepth 返回显示屏幕的颜色分辨率（比特每像素）</strong></li>
+</ul>
+<h2 id="Body对象"><a href="#Body对象" class="headerlink" title="Body对象"></a><strong>Body对象</strong></h2><h3 id="属性-2"><a href="#属性-2" class="headerlink" title="属性"></a><strong>属性</strong></h3><ul>
+<li><strong>clientWidth网页可见区域宽</strong></li>
+<li><strong>clientHeight网页可见区域高</strong></li>
+<li><strong>scrollWidth网页正文全文宽</strong></li>
+<li><strong>scrollHeight网页正文全文高</strong></li>
+<li><strong>scrollTop网页被卷去的高</strong></li>
+<li><strong>scrollLeft网页被卷去的左</strong></li>
+</ul>
+<p><strong>##Location 对象</strong></p>
+<blockquote>
+<p><strong>Location 对象对象包含有关当前 URL 的信息</strong></p>
+<h3 id="属性-3"><a href="#属性-3" class="headerlink" title="属性"></a><strong>属性</strong></h3><ul>
+<li><strong>hash设置或返回从井号 (#) 开始的 URL（锚）</strong></li>
+<li><strong>host设置或返回主机名和当前 URL 的端口号</strong></li>
+<li><strong>hostname设置或返回当前 URL 的主机名</strong></li>
+<li><strong>href设置或返回完整的 URL</strong></li>
+<li><strong>pathname设置或返回当前 URL 的路径部分</strong></li>
+<li><strong>port设置或返回当前 URL 的端口号</strong></li>
+<li><strong>protocol设置或返回当前 URL 的协议</strong></li>
+<li><strong>search设置或返回从问号 (?) 开始的 URL（查询部分）</strong></li>
+</ul>
+</blockquote>
+<p><strong>###方法</strong></p>
+<ul>
+<li><strong>assign() 加载新的文档</strong></li>
+<li><strong>reload() 重新加载当前文档</strong></li>
+<li><strong>replace() 用新的文档替换当前文档</strong></li>
+</ul>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2017/04/10/BOM 对象/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/04/10/BOM 对象/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2017总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+<!--PC版-->
+<div id="SOHUCS" sid="title"></div>
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: 'cyti2Pt4c',
+        conf: 'prod_4d708f848dfd9870b4f74b3811c72c0c'
+    });
+</script>
+</html>

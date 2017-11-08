@@ -1,0 +1,315 @@
+<!DOCTYPE HTML>
+
+    <script type="text/javascript" src="/live2d/script.js"></script>
+    <canvas id="live2dcanvas" width="150" height="300" class="live2d"></canvas>
+    <style>
+      #live2dcanvas {
+        position: fixed;
+        right: 0px;
+        z-index: 999;
+        pointer-events: none;
+        bottom: -60px;
+      }
+    </style>
+    <script>loadlive2d("live2dcanvas" ,"/live2d/assets/miku/miku.model.json",0.5)</script>
+  
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	 <link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			
+    <title>
+    Hy小胖纸
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+
+			    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">HY小胖纸</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/学习/">学习</a></li><li><a class="category-link" href="/categories/学习/动态网页编程/">动态网页编程</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/miccall" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(../images/dyn1.gif);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >javascript  ajax 概念及form提交</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="AJAX概念及form提交"><a href="#AJAX概念及form提交" class="headerlink" title="AJAX概念及form提交"></a>AJAX概念及form提交</h1><h2 id="AJAX概念"><a href="#AJAX概念" class="headerlink" title="AJAX概念"></a>AJAX概念</h2><p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="830" height="86" src="//music.163.com/outchain/player?type=2&id=512359558&auto=1&height=66"></iframe></p>
+<ul>
+<li><p>AJAX 是什么？</p>
+<blockquote>
+<p><strong>Asynchronous JavaScript and XML（异步JavaScript和XML)</strong></p>
+</blockquote>
+</li>
+<li><p>作用</p>
+<ul>
+<li><strong>不重新加载整个页面的情况下，可以与服务器交换数据并更新部分网页内容。</strong></li>
+<li>节省用户操作，时间，提高用户体验，减少数据请求传输获取数据</li>
+</ul>
+</li>
+<li><p>过程：</p>
+<blockquote>
+<p>初始化 – &gt;发送请求 –&gt; 服务器收到请求 –&gt; 服务器处理 –&gt; 返回结果</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h1><ul>
+<li>表单form<ul>
+<li>action 提交到哪里</li>
+<li>method 提交方式</li>
+</ul>
+</li>
+<li>Get方式<ul>
+<li>Get通过url地址传输</li>
+<li>有数据量限制，每个浏览器都不同</li>
+<li>不安全</li>
+</ul>
+</li>
+<li>Post方式<ul>
+<li>Post通过浏览器内部传输</li>
+<li>数据量理论上无限</li>
+<li>相对比较安全</li>
+</ul>
+</li>
+<li>enctype : 提交的数据格式，默认application/x-www-form-urlencoded</li>
+<li>提交方式必须与后台的接收方式一致。</li>
+</ul>
+<h1 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h1><p>try {}catch{}用于异常处理，当try语句里的内容执行出现<br>错误的时候，就会执行catch里的语句。 catch里能使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">    //err.message捕获出错的原因。</div><div class="line">    try&#123;//此处是可能产生例外的语句</div><div class="line">&#125;catch(err)&#123;</div><div class="line">//此处是负责例外的处理白语句</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p>finally里是始终会执行的语句</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Try&#123;</div><div class="line">//此处是可能产生例外的语句</div><div class="line">&#125; catch (err) &#123;</div><div class="line">//此处是负责例外处理的语句</div><div class="line">&#125;finally&#123;</div><div class="line">//此处是出口语句，当try，catch的</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="AJAX的方法"><a href="#AJAX的方法" class="headerlink" title="AJAX的方法"></a>AJAX的方法</h1><ul>
+<li>Open方法 open(method,url,async)<ul>
+<li>三个参数的含义<br>1、提交方式 Form-method<br>2、提交地址 Form-action<br>3、异步（同步）</li>
+</ul>
+</li>
+<li>Send方法<br>发送数据请求，相当于Form的submit</li>
+<li>AJAX请求状态监控<ul>
+<li>onreadystatechange事件</li>
+<li>readyState属性：请求状态<br>0 （初始化）还没有调用open()方法<br>1（载入）已调用send()方法，正在发送请求<br>2（载入完成）send()方法完成，已收到全部响应内容<br>3（解析）正在解析响应内容<br>4（完成）响应内容解析完成，可以在客户端调用了</li>
+<li>status属性：服务器(请求资源)的状态</li>
+</ul>
+</li>
+</ul>
+<h1 id="AJAX返回数据的处理"><a href="#AJAX返回数据的处理" class="headerlink" title="AJAX返回数据的处理"></a>AJAX返回数据的处理</h1><ul>
+<li>返回的内容<ul>
+<li>responseText：返回以文本形式存放的内容</li>
+<li>responseXML：返回XML形式的内容</li>
+</ul>
+</li>
+<li>返回数据的处理<ul>
+<li>数据类型：XML、 HTML、 JSON</li>
+<li>Eval解析JSON的时候需要注意的地方</li>
+<li>JSON.parse() : 字符串解析成对象</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2017/04/16/AJAX概念及form提交/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/04/16/AJAX概念及form提交/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2017总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+<!--PC版-->
+<div id="SOHUCS" sid="title"></div>
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: 'cyti2Pt4c',
+        conf: 'prod_4d708f848dfd9870b4f74b3811c72c0c'
+    });
+</script>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+
+    <script type="text/javascript" src="/live2d/script.js"></script>
+    <canvas id="live2dcanvas" width="150" height="300" class="live2d"></canvas>
+    <style>
+      #live2dcanvas {
+        position: fixed;
+        right: 0px;
+        z-index: 999;
+        pointer-events: none;
+        bottom: -60px;
+      }
+    </style>
+    <script>loadlive2d("live2dcanvas" ,"/live2d/assets/miku/miku.model.json",0.5)</script>
+  
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	 <link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			
+    <title>
+    Hy小胖纸
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+
+			    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">HY小胖纸</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/学习/">学习</a></li><li><a class="category-link" href="/categories/学习/动态网页编程/">动态网页编程</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/miccall" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(../images/dyn1.gif);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >scratch mvc框架</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h2 id="angular"><a href="#angular" class="headerlink" title="angular"></a><strong>angular</strong></h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h3><ul>
+<li><strong>angular 是 一个 JavaScript MVC型框架</strong><ul>
+<li><strong>M: model 数据</strong></li>
+<li><strong>V: view  视图</strong></li>
+<li><strong>C: controller 控制器</strong></li>
+</ul>
+</li>
+<li><strong>angular 通过新的属性和表达式（指令） 扩展了HTML</strong></li>
+<li><strong>angular 可以用来单一页面的应用程序</strong></li>
+<li><strong>angular 的核心 : 双向数据绑定</strong></li>
+</ul>
+<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a><strong>使用方法</strong></h3><ul>
+<li><strong>通过script 标签把 angular.js 文件引入</strong></li>
+<li><strong>用cdn 网上js文件</strong><br>  <code>&lt;script src=&quot;http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js&quot;&gt;&lt;/script&gt;</code></li>
+</ul>
+<h3 id="指令"><a href="#指令" class="headerlink" title="指令"></a><strong>指令</strong></h3><ul>
+<li><p><strong>ng-app: 初始化一个应用程序</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> app=angular.module(<span class="string">"myapp"</span>,[])</div><div class="line"><span class="comment">// 创建一个angular 项目</span></div><div class="line"><span class="comment">// 第一个参数是 : 项目名称</span></div><div class="line"><span class="comment">// 第二个参数是:  数组,代表依赖注入</span></div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>ng-model : 绑定数据到带有输入域的元素</strong></p>
+</li>
+<li><strong>ng-bind : 绑定除带有输入域的元素</strong></li>
+<li><strong>ng-init: 初始化一个数据</strong></li>
+<li><p><strong>ng-repeat: 循环数组,创建元素</strong></p>
+<ul>
+<li><strong>数组: <code>x in model</code> x代表 数组中的每一项数据;</strong></li>
+<li><strong>对象(object) <code>x in model</code> x代表对象中的每一项的值</strong><blockquote>
+<p><strong>ng-repeat 指令对于集合中（数组中）的每个项会 克隆一次 HTML 元素。</strong></p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p><strong>ng-controller:绑定一个控制器 (一个页面可以有多个控制器)</strong></p>
+</li>
+</ul>
+<h3 id="自定义指令"><a href="#自定义指令" class="headerlink" title="自定义指令"></a><strong>自定义指令</strong></h3><ul>
+<li><p><strong>创建 :</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">/*</div><div class="line">   *</div><div class="line">   * // app.directive()用来创建指令 ,可以创建四种类型的指令: ECMA: E:元素,C:类名,M: 注释,A: 属性,默认创建的是EA</div><div class="line">   * // 有两个参数 :</div><div class="line">   *               第一个参数: 指令名称(驼峰命名法);</div><div class="line">   *               第二个参数: 是一个函数,并且这个函数要返回一个对象</div><div class="line">   *                           对象:</div><div class="line">                                   template: 模板</div><div class="line">                                   restrict: 类型</div><div class="line">                                   replace: 替换 ps:如果要用在M上面,必须加这个属性,值是true;</div><div class="line">   * */</div><div class="line">   app.directive(&quot;firstName&quot;,function () &#123;</div><div class="line">       return &#123;</div><div class="line">           template:&quot;&lt;h1&gt;三&lt;/h1&gt;&quot;,</div><div class="line">           restrict : &quot;E&quot;,     //</div><div class="line">       &#125;;</div><div class="line">   &#125;)</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>使用:</strong></p>
+<ul>
+<li><strong>指令名称: 要把驼峰命名全部写成小写,大写改小写加-</strong></li>
+<li><strong>E: 元素</strong><blockquote>
+<p><strong><runoob-directive></runoob-directive></strong></p>
+</blockquote>
+</li>
+<li><strong>C: 类名</strong><blockquote>
+<p><strong><div class="runoob-directive"></div></strong></p>
+</blockquote>
+</li>
+<li><strong>A: 属性:</strong><blockquote>
+<p><strong><div runoob-directive=""></div></strong></p>
+</blockquote>
+</li>
+<li><strong>M:注释:</strong><blockquote>
+<p><strong><!-- directive: runoob-directive --></strong></p>
+<ul>
+<li><strong>注释的内容前后要有空格,要以directive: 开始,空格+指令名称</strong></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2017/10/13/scratch_1/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/10/13/scratch_1/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2017总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+<!--PC版-->
+<div id="SOHUCS" sid="title"></div>
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: 'cyti2Pt4c',
+        conf: 'prod_4d708f848dfd9870b4f74b3811c72c0c'
+    });
+</script>
+</html>

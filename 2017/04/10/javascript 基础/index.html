@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+
+    <script type="text/javascript" src="/live2d/script.js"></script>
+    <canvas id="live2dcanvas" width="150" height="300" class="live2d"></canvas>
+    <style>
+      #live2dcanvas {
+        position: fixed;
+        right: 0px;
+        z-index: 999;
+        pointer-events: none;
+        bottom: -60px;
+      }
+    </style>
+    <script>loadlive2d("live2dcanvas" ,"/live2d/assets/miku/miku.model.json",0.5)</script>
+  
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	 <link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			
+    <title>
+    Hy小胖纸
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+
+			    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">HY小胖纸</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/学习/">学习</a></li><li><a class="category-link" href="/categories/学习/动态网页编程/">动态网页编程</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/miccall" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(../images/dyn1.gif);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >JavaScript基础引入</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p><strong><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=27583305&auto=1&height=66"></iframe></strong></p>
+<h1 id="javascript基础"><a href="#javascript基础" class="headerlink" title="javascript基础"></a><strong>javascript基础</strong></h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h2><ul>
+<li><strong>轻量级、直译式客户端脚本语言。</strong></li>
+<li><strong>可被所有浏览器执行，实现网页的劢态功能。</strong></li>
+<li><strong>揑入 HTML 页面后，可由所有的现代浏览器执行</strong><h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a><strong>应用场景</strong></h2></li>
+<li><strong>操作页面元素，动态改变页面内容动态改变表格内容</strong></li>
+<li><strong>编写页面动态效果轮播图层的切换 和 树形菜单等</strong></li>
+<li><strong>数据的客户端验证－减轻服务器端压力注册表单验证</strong></li>
+<li><strong>通过ajax和后端语言实现数据交互</strong></li>
+</ul>
+<h2 id="组成"><a href="#组成" class="headerlink" title="组成:"></a><strong>组成:</strong></h2><ol>
+<li><strong>ECMAScript</strong></li>
+<li><strong>BOM</strong></li>
+<li><strong>DOM</strong></li>
+</ol>
+<h2 id="ECMAScript"><a href="#ECMAScript" class="headerlink" title="ECMAScript"></a><strong>ECMAScript</strong></h2><ul>
+<li><strong>概念：JavaScript的核心，描述了语言的基本语法和数据类</strong><br><strong>型，ECMAScript是一套标准，定义了一种语言（比如JS）</strong><br><strong>是什么样子。</strong></li>
+<li><strong>编码遵循ECMAScript标准</strong></li>
+</ul>
+<h2 id="BOM-浏览器对象模型"><a href="#BOM-浏览器对象模型" class="headerlink" title="BOM(浏览器对象模型)"></a><strong>BOM(浏览器对象模型)</strong></h2><ul>
+<li><strong>概念:BOM是用于描述这种对象不对象之间层次关系的模型，浏览器对象模型提供了独立于内容的、可以与浏览器窗口进行互动的对象结构。 BOM由多个对象组成，其中代表浏览器窗口的Window对象是BOM的顶层对象，其他对象都是该对象的子对象。</strong></li>
+</ul>
+<h3 id="DOM-文档对象模型"><a href="#DOM-文档对象模型" class="headerlink" title="DOM(文档对象模型)"></a>DOM(文档对象模型)</h3><ul>
+<li><strong>概念:W3C组织推荐的处理可扩展置标语言的标准编程接口。 DOM是以面向对象方式描述的文档模型。 DOM定义了表示和修改文档所需的对象、这些对象的行为和属性以及这些对象乊间的关系。可以把DOM认为是页面上数据和结构的一个树形表示，不过页面当然可能并不是以这种树的方式具体实现。</strong></li>
+</ul>
+<p>##<strong>javascript 使用方法</strong></p>
+<ul>
+<li><p><strong>html内嵌javascript代码</strong></p>
+<blockquote>
+<p><strong><code>&lt;script type=&quot;text/javascript&quot;&gt; //JavaScript 语句&lt;/script &gt;</code></strong></p>
+</blockquote>
+</li>
+<li><p><strong>外部JS文件</strong></p>
+<blockquote>
+<p><strong><code>&lt;script src=&quot;hello.js&quot; language=&quot;javascript&quot;&gt;&lt;/script&gt;</code></strong></p>
+</blockquote>
+</li>
+<li><p><strong>行内编写方式</strong></p>
+<blockquote>
+<p><strong><code>&lt;input name=&quot;btn&quot; type=&quot;button&quot; value=&quot;弹出消息框&quot;onclick=&quot;javascript:alert(&#39;欢迎你&#39;);&quot;/&gt;</code></strong></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="事件监听"><a href="#事件监听" class="headerlink" title="事件监听"></a><strong>事件监听</strong></h2><ul>
+<li><strong>onload事件:是在页面或图片加载完成后立即执行的事件获取元素</strong></li>
+<li><strong>getElementById()：获取指定 ID 的第一个对象引用</strong></li>
+<li><strong>getElementsByName()：通过NAME属性获Document中指定名称对象的集合</strong></li>
+<li><strong>getElementsByTagName()：使用指定的标签名返回所有的元</strong><br><strong>素，这些元素是您在使用此方法时所处的元素的后代</strong></li>
+</ul>
+<h2 id="JavaScript-的调试工具及调试方法"><a href="#JavaScript-的调试工具及调试方法" class="headerlink" title="JavaScript 的调试工具及调试方法"></a><strong>JavaScript 的调试工具及调试方法</strong></h2><ul>
+<li><strong>调试工具:Firebug工具</strong></li>
+<li><strong>安装：火狐浏览器 - 选顷 – 附加组件 – 搜索Firebug添加即可。安装完成，按键盘f12即可打开Firebug</strong></li>
+<li><strong>Chrome和ie自带调试工具，不需要安装</strong></li>
+<li><strong>调试方法</strong><ol>
+<li><strong>使用Firebug的HTML 、 CSS、脚本顷查看页面的html标签、 CSS文件、 JS文件。</strong></li>
+<li><strong>Firebug控制台:</strong><ol>
+<li><strong>如果页面报错，会在控制台显示：包括错误原因和行号</strong></li>
+<li><strong>控制台最下边的输入框可以输入js代码，提交浏览器执行</strong></li>
+</ol>
+</li>
+<li><strong>利用js的console方法，可以在控制台输出js代码中的值、对象、 DOM等，以方便查看对象的结构</strong><br><strong>常用方法：console.log() console.dir()</strong></li>
+</ol>
+</li>
+</ul>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2017/04/10/javascript 基础/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/04/10/javascript 基础/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2017总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+<!--PC版-->
+<div id="SOHUCS" sid="title"></div>
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: 'cyti2Pt4c',
+        conf: 'prod_4d708f848dfd9870b4f74b3811c72c0c'
+    });
+</script>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+
+    <script type="text/javascript" src="/live2d/script.js"></script>
+    <canvas id="live2dcanvas" width="150" height="300" class="live2d"></canvas>
+    <style>
+      #live2dcanvas {
+        position: fixed;
+        right: 0px;
+        z-index: 999;
+        pointer-events: none;
+        bottom: -60px;
+      }
+    </style>
+    <script>loadlive2d("live2dcanvas" ,"/live2d/assets/miku/miku.model.json",0.5)</script>
+  
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	 <link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			
+    <title>
+    Hy小胖纸
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+
+			    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">HY小胖纸</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/学习/">学习</a></li><li><a class="category-link" href="/categories/学习/动态网页编程/">动态网页编程</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/miccall" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(../images/dyn1.gif);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >javascript 字符串操作</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="JS字符串操作"><a href="#JS字符串操作" class="headerlink" title="JS字符串操作"></a><strong>JS字符串操作</strong></h1><p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="830" height="86" src="//music.163.com/outchain/player?type=2&id=512359558&auto=1&height=66"></iframe></p>
+<blockquote>
+<p><strong>“字符串对象”是Javascript内置的字符块处理对象，用于定义及处理字符串。</strong></p>
+</blockquote>
+<ol>
+<li><p><strong>声明字符串的两种方法:</strong></p>
+<ul>
+<li><strong><code>var str1 = &quot;string1&quot; ;</code></strong></li>
+<li><strong><code>var str2 = new String(&quot;string2&quot;);</code></strong></li>
+</ul>
+<blockquote>
+<p><strong>两种方式的差别:str1是一个字符串，类型是string ，而str2则是对象“ string2”的引用，类型是对象。如果引用被修改，str2也会被修改</strong></p>
+</blockquote>
+</li>
+<li><p><strong>字符串操作方法</strong></p>
+<ol>
+<li><strong>charAt() 返回指定位置的字符</strong></li>
+<li><strong>charCodeAt() 返回指定位置的字符的Unicode编码</strong></li>
+<li><strong>search() 用于检索字符串中指定的子字符串</strong></li>
+<li><strong>replace() 查找匹配指定的字符串，然后用新字符串代替匹配的字符串</strong></li>
+<li><strong>concat() 将两个或多个字符的文本组合起来，返回一个新的字符串</strong></li>
+<li><strong>使用加号链接字符串。 newStr = “string1”+”string2”</strong></li>
+<li><strong>indexOf() 返回字符串中一个子串第一处出现的索引。如果没有匹配项，返回 -1</strong></li>
+<li><strong>lastIndexOf() 返回字符串中一个子串最后一处出现的索引，如果没有匹配项，返回 -1</strong></li>
+<li><strong>slice() 提取字符串的一部分，并返回一个新字符串。两个参数，第一个为起始位置，第二个为终止位置（留头不留尾），如果没有end，就取到末尾</strong></li>
+<li><strong>substring() 返回字符串的一个子串。传入参数是起始位置和结束位置。（留头不留尾），如果没有end，就取到末尾</strong></li>
+<li><strong>split() 通过将字符串划分成子串，将一个字符串做成一个字符串数组。</strong></li>
+<li><strong>Length 返回字符串的长度（其包含的字符的个数）</strong></li>
+<li><strong>toLowerCase() 将整个字符串转成小写字母</strong></li>
+<li><strong>toUpperCase() 将整个字符串转成大写字母</strong></li>
+<li><strong>转义字符 \</strong><br><strong>我们平时想输出一个双引号（“”）我们会这样写：</strong><br><strong><code>document.write(“””);</code></strong><br><strong>但是这样写是错诨的,所以我们需要用到转义字符：</strong><br><strong><code>document.write(“ \””);</code></strong></li>
+</ol>
+</li>
+</ol>
+<h1 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a><strong>JSON</strong></h1><blockquote>
+<p><strong>JSON，全称是JavaScript Object Notation。它是基于JavaScript编程诧言ECMA-262 3rd EditionDecember 1999标准的一种轻量级的数据交换格式，主要用于跟服务器进行交换数据。跟XML相类似，它独立诧言，在跨平台数据传输上有很大的优势。</strong></p>
+</blockquote>
+<ol>
+<li><p><strong>JSON的书写格式：</strong></p>
+<ol>
+<li><p><strong>格式一：<code>{ “name”:“ xiaoming”, “age”:“22”, “email”:&quot;jone@163.com&quot; };</code></strong></p>
+<ol>
+<li><strong>格式二:</strong>                        </li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">&quot;name&quot;:&quot;xiaoming&quot;,  </div><div class="line">&quot;age&quot;:&quot;22&quot;,  </div><div class="line">&quot;friends&quot;:[  </div><div class="line">	&#123;&quot;name&quot;:&#123;&quot;firstName&quot;:&quot;liu&quot;,&quot;lastName&quot;:&quot;wei&quot;&#125;,&quot;age&quot;:&quot;23&quot;&#125;,  </div><div class="line">	&#123;&quot;name&quot;:&#123;&quot;firstName&quot;:&quot;li&quot;,&quot;lastName&quot;:&quot;mei&quot;&#125;,&quot;age&quot;:&quot;27&quot;&#125;  </div><div class="line">]  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>取值</strong></p>
+<ul>
+<li><strong>用“点”来取得相应的值，如<code>JSON.name</code></strong></li>
+</ul>
+</li>
+<li><p><strong>JSON和字符串之间转换</strong></p>
+<ol>
+<li><strong>JSON.stringify(json)</strong></li>
+<li><strong>JSON.parse(str)</strong></li>
+</ol>
+</li>
+<li><p><strong>JSON拷贝</strong></p>
+<blockquote>
+<p><strong>深拷贝,浅拷贝</strong></p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+<h1 id="This-关键字"><a href="#This-关键字" class="headerlink" title="This 关键字"></a><strong>This 关键字</strong></h1><ol>
+<li><p><strong>this概念 :</strong></p>
+<ol>
+<li><p><strong>this是Javascript诧言的一个关键字它代表函数运行时，自劢生成的一个内部对象，只能在函数内部使用</strong></p>
+</li>
+<li><p><strong>三种情况下的this指向:</strong></p>
+<ol>
+<li><strong>纯粹的函数调用: this指向调用函数的对象</strong></li>
+<li><strong>作为对象方法的调用: this指向调用这个方法的对象</strong></li>
+<li><strong>作为构造函数调用: this指向构造函数的实例</strong></li>
+</ol>
+</li>
+<li><p><strong>修改this指向:</strong></p>
+<ol>
+<li><p><strong>使用call()方法</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1. 语法：call(thisObj，Object)</div><div class="line">2. 定义：调用一个对象的一个方法，以另一个对象替换当前对象</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>使用apply()方法</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1. 语法：apply(thisObj，[argArray])</div><div class="line">2.  定义：应用某一对象的一个方法，用另一个对象替换当前对象</div></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li><p><strong>使用new关键字</strong></p>
+</li>
+</ol>
+</li>
+</ol>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2017/04/28/JS字符串操作/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/04/28/JS字符串操作/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2017总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+<!--PC版-->
+<div id="SOHUCS" sid="title"></div>
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: 'cyti2Pt4c',
+        conf: 'prod_4d708f848dfd9870b4f74b3811c72c0c'
+    });
+</script>
+</html>

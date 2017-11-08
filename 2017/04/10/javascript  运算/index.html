@@ -1,0 +1,325 @@
+<!DOCTYPE HTML>
+
+    <script type="text/javascript" src="/live2d/script.js"></script>
+    <canvas id="live2dcanvas" width="150" height="300" class="live2d"></canvas>
+    <style>
+      #live2dcanvas {
+        position: fixed;
+        right: 0px;
+        z-index: 999;
+        pointer-events: none;
+        bottom: -60px;
+      }
+    </style>
+    <script>loadlive2d("live2dcanvas" ,"/live2d/assets/miku/miku.model.json",0.5)</script>
+  
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	 <link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			
+    <title>
+    Hy小胖纸
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+
+			    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">HY小胖纸</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/学习/">学习</a></li><li><a class="category-link" href="/categories/学习/动态网页编程/">动态网页编程</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/miccall" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(../images/dyn1.gif);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >javascript  运算</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="JS赋值-运算比较-流程控制"><a href="#JS赋值-运算比较-流程控制" class="headerlink" title="JS赋值 运算比较 流程控制"></a><strong>JS赋值 运算比较 流程控制</strong></h1><h2 id="变量的声明与赋值"><a href="#变量的声明与赋值" class="headerlink" title="变量的声明与赋值"></a><strong>变量的声明与赋值</strong></h2><ul>
+<li><strong>先声明变量再赋值</strong><br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="830" height="86" src="//music.163.com/outchain/player?type=2&id=512359558&auto=1&height=66"></iframe><blockquote>
+<p><strong><code>var width</code>      <code>width=5</code></strong><br><strong><code>var</code> － 用于声明变量的关键字</strong><br><strong><code>width</code> － 变量名</strong></p>
+</blockquote>
+</li>
+<li><p><strong>同时声明和赋值变量</strong></p>
+<blockquote>
+<p><code>var catName= “ 皮皮”; var x, y, z = 10;</code> </p>
+</blockquote>
+</li>
+<li><p><strong>不声明直接赋值</strong></p>
+<blockquote>
+<p><strong><code>width=5</code></strong></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="JS运算"><a href="#JS运算" class="headerlink" title="JS运算"></a><strong>JS运算</strong></h2><h3 id="运算符号"><a href="#运算符号" class="headerlink" title="运算符号"></a><strong>运算符号</strong></h3><ul>
+<li><strong>算数运算符(+,-,*,/,%,++,–)</strong></li>
+<li><strong>赋值运算符(=,+=,-=,*=,/=,%=)</strong></li>
+<li><strong>字符串连接符(+)</strong></li>
+<li><strong>优先级:</strong><blockquote>
+<p><strong>优先级：（）&gt;算术运算符（先乘除后加减）&gt;赋值运算符</strong></p>
+<h2 id="JS比较"><a href="#JS比较" class="headerlink" title="JS比较"></a><strong>JS比较</strong></h2><h3 id="比较符号"><a href="#比较符号" class="headerlink" title="比较符号"></a><strong>比较符号</strong></h3></blockquote>
+</li>
+<li><strong>比较运算符(&gt;,&lt;,&gt;=,&lt;=,==,===,!=,!==)</strong></li>
+<li><strong>逻辑运算符(&amp;&amp;,||,!)</strong></li>
+<li><p><strong>三目运算符:</strong></p>
+<blockquote>
+<p> <strong>条件?语句1:语句2</strong></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="JS-流程控制"><a href="#JS-流程控制" class="headerlink" title="JS 流程控制"></a><strong>JS 流程控制</strong></h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介:"></a><strong>简介:</strong></h3><blockquote>
+<p><strong>所谓的“流程”就是程序代码执行的顺序。在任何一种语言中，程序控制是必需的。它能使整个程序减少混乱，使之顺利按照其一定的方式执行。 JavaScript常用的控制流程有3种基本结构：顺序结构、选择结构、循环结构顺序结构,正常情况下，程序中的语句是按照书写顺序执行的，这种结构成为顺序结构。前面所例举的程序都是顺序结构的程序。</strong></p>
+</blockquote>
+<h3 id="选择结构"><a href="#选择结构" class="headerlink" title="选择结构"></a><strong>选择结构</strong></h3><blockquote>
+<p><strong>选择结构主要用判断语句来实现根据一定的条件决定进一步执行那些语句。 JavaScript提供了两种类型的选择结果语句，也成为判断语句：<code>if语句</code>和<code>switch语句</code>。一般来讲if语句用于从两条执行路线中选择其一执行,而switch语句用于从多条执行路线中选择其一执行。</strong></p>
+</blockquote>
+<ul>
+<li><p><strong>if语句</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(条件)&#123;</div><div class="line"><span class="comment">//JavaScript代码;</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>If条件语句</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(条件)&#123;</div><div class="line"><span class="comment">//JavaScript代码;</span></div><div class="line">&#125;<span class="keyword">else</span>&#123;</div><div class="line"><span class="comment">//JavaScript代码;</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>If…else if…else语句</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (条件 <span class="number">1</span>)</div><div class="line">&#123;</div><div class="line">当条件 <span class="number">1</span> 为 <span class="literal">true</span> 时执行的代码</div><div class="line">&#125;</div><div class="line"><span class="keyword">else</span> <span class="keyword">if</span> (条件 <span class="number">2</span>)</div><div class="line">&#123;</div><div class="line">当条件 <span class="number">2</span> 为 <span class="literal">true</span> 时执行的代码</div><div class="line">&#125;</div><div class="line"><span class="keyword">else</span></div><div class="line">&#123;</div><div class="line">当条件 <span class="number">1</span> 和 条件 <span class="number">2</span> 都不为 <span class="literal">true</span> 时执行的代码</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>switch语句</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">switch</span>(n)</div><div class="line">&#123; <span class="keyword">case</span> <span class="number">1</span>:</div><div class="line">执行代码块 <span class="number">1</span></div><div class="line"><span class="keyword">break</span>;</div><div class="line"><span class="keyword">case</span> <span class="number">2</span>:</div><div class="line">执行代码块 <span class="number">2</span></div><div class="line"><span class="keyword">break</span>;</div><div class="line"><span class="keyword">default</span>:</div><div class="line">n 与 <span class="keyword">case</span> <span class="number">1</span> 和 <span class="keyword">case</span> <span class="number">2</span> 不同时执行的代码</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="循环结构"><a href="#循环结构" class="headerlink" title="循环结构"></a><strong>循环结构</strong></h3><blockquote>
+<p><strong>前面介绍的if语句和switch语句，都属于条件判断语句。即在条件为真的情况下每行脚本只有一次执行的机会。对于实际情况中，需要根据条件或计数器来重复执行多行程序代码的能力，利用循环语句来实现。</strong><br><strong>在JavaScript中有两种主要类型的循环语句，<code>for循</code></strong><br><strong>环和<code>while循环</code></strong></p>
+</blockquote>
+<ul>
+<li><p><strong>for 循环</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (语句 <span class="number">1</span>; 语句 <span class="number">2</span>; 语句 <span class="number">3</span>)</div><div class="line">&#123;</div><div class="line">被执行的代码块</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li><strong>语句 1 在循环（代码块）开始前执行</strong></li>
+<li><strong>语句 2 定义运行循环（代码块）的条件</strong><ul>
+<li><strong>语句 3 在循环（代码块）已被执行之后执行</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>While 语句</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">while</span> (条件)</div><div class="line">&#123;</div><div class="line">需要执行的代码</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Do…While语句</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">do</span></div><div class="line">&#123;</div><div class="line">需要执行的代码</div><div class="line">&#125;</div><div class="line"><span class="keyword">while</span> (条件);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<blockquote>
+<p><strong>在循环语句中，只有当循环条件表达式值为false时，循环语句才能结束，为了给for和while循环加入更多的使用程序，JavaScript包含有<code>break</code>和<code>continue语句</code>。这两个语句可用于改变循环的流程。</strong></p>
+<ul>
+<li><strong>Break语句 中断循环</strong></li>
+<li><strong>Continue语句 开始下一次循环</strong></li>
+</ul>
+</blockquote>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2017/04/10/javascript  运算/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/04/10/javascript  运算/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2017总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+<!--PC版-->
+<div id="SOHUCS" sid="title"></div>
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: 'cyti2Pt4c',
+        conf: 'prod_4d708f848dfd9870b4f74b3811c72c0c'
+    });
+</script>
+</html>

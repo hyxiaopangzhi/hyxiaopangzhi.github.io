@@ -1,0 +1,371 @@
+<!DOCTYPE HTML>
+
+    <script type="text/javascript" src="/live2d/script.js"></script>
+    <canvas id="live2dcanvas" width="150" height="300" class="live2d"></canvas>
+    <style>
+      #live2dcanvas {
+        position: fixed;
+        right: 0px;
+        z-index: 999;
+        pointer-events: none;
+        bottom: -60px;
+      }
+    </style>
+    <script>loadlive2d("live2dcanvas" ,"/live2d/assets/miku/miku.model.json",0.5)</script>
+  
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	 <link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			
+    <title>
+    Hy小胖纸
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+
+			    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">HY小胖纸</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/学习/">学习</a></li><li><a class="category-link" href="/categories/学习/动态网页编程/">动态网页编程</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/miccall" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(../images/dyn1.gif);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >javascript  ajax的常见问题</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="Ajax-常问问题"><a href="#Ajax-常问问题" class="headerlink" title="Ajax 常问问题"></a><strong>Ajax 常问问题</strong></h1><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="830" height="86" src="//music.163.com/outchain/player?type=2&id=512359558&auto=1&height=66"></iframe>
+
+<ol>
+<li><p><strong>什么是ajax，为什么要使用Ajax（请谈一下你对Ajax的认识）</strong></p>
+<ol>
+<li><p><strong>什么是ajax：</strong></p>
+<blockquote>
+<p><strong>AJAX是“Asynchronous JavaScript and XML”的缩写。他是指一种创建交互式网页应用的网页开发技术。</strong></p>
+</blockquote>
+</li>
+<li><p><strong>Ajax包含下列技术：</strong></p>
+<blockquote>
+<ul>
+<li><strong>基于web标准（standards-based presentation）XHTML+CSS的表示；</strong></li>
+<li><strong>使用 DOM（Document Object Model）进行动态显示及交互；</strong></li>
+<li><strong>使用 XML 和 XSLT 进行数据交换及相关操作；</strong></li>
+<li><strong>使用 XMLHttpRequest 进行异步数据查询、检索；</strong></li>
+<li><strong>使用 JavaScript 将所有的东西绑定在一起。</strong></li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</li>
+<li><p><strong>为什么要用ajax：Ajax应用程序的优势在于：</strong></p>
+<ol>
+<li><strong>通过异步模式，提升了用户体验</strong></li>
+<li><strong>优化了浏览器和服务器之间的传输，减少不必要的数据往返，减少了带宽占用</strong></li>
+<li><strong>Ajax引擎在客户端运行，承担了一部分本来由服务器承担的工作，从而减少了大用户量下的服务器负载。</strong></li>
+</ol>
+</li>
+<li><p><strong>Ajax的最大的特点是什么。</strong></p>
+<blockquote>
+<p><strong>Ajax可以实现动态不刷新（局部刷新）</strong></p>
+</blockquote>
+<p><strong>就是能在不更新整个页面的前提下维护数据。这使得Web应用程序更为迅捷地回应用户动作，并避免了在网络上发送那些没有改变过的信息。</strong></p>
+</li>
+<li><p><strong>请介绍一下XMLHTTPREQUEST对象？</strong></p>
+<p><strong>Ajax的核心是JavaScript对象XmlHttpRequest。该对象在Internet Explorer 5中首次引入，它是一种支持异步请求的技术。简而言之，XmlHttpRequest使您可以使用JavaScript向服务器提出请求并处理响应，而不阻塞用户。通过XMLHttpRequest对象，Web开发人员可以在页面加载以后进行页面的局部更新。</strong></p>
+</li>
+<li><p><strong>Ajax技术体系的组成部分有哪些？</strong></p>
+<p><strong>HTML，css，dom，xml，xmlHttpRequest，javascript</strong></p>
+</li>
+<li><p><strong>AJAX应用和传统Web应用有什么不同？</strong></p>
+<p><strong>在传统的Javascript编程中，如果想得到服务器端数据库或文件上的信息，或者发送客户端信息到服务器，需要建立一个HTML form然后GET或者POST数据到服务器端。用户需要点击”Submit”按钮来发送或者接受数据信息，然后等待服务器响应请求，页面重新加载。</strong></p>
+<p><strong>因为服务器每次都会返回一个新的页面， 所以传统的web应用有可能很慢而且用户交互不友好。</strong></p>
+<p><strong>使用AJAX技术， 就可以使Javascript通过XMLHttpRequest对象直接与服务器进行交互。</strong></p>
+<p><strong>通过HTTP Request， 一个web页面可以发送一个请求到web服务器并且接受web服务器返回的信息(不用重新加载页面)，展示给用户的还是通一个页面，用户感觉页面刷新，也看不到到Javascript后台进行的发送请求和接受响应。</strong></p>
+</li>
+<li><p><strong>Ajax和javascript的区别？</strong></p>
+<p><strong>javascript是一种在浏览器端执行的脚本语言，Ajax是一种创建交互式网页应用的开发技术 ，它是利用了一系列相关的技术其中就包括javascript。</strong></p>
+<p><strong>Javascript是由网景公司开发的一种脚本语言，它和sun公司的java语言是没有任何关系的，它们相似的名称只是一种行销策略。</strong></p>
+<p><strong>在一般的web开发中，javascript是在浏览器端执行的，我们可以用javascript控制浏览器的行为和内容。</strong></p>
+<p><strong>在 Ajax应用中信息是如何在浏览器和服务器之间传递的</strong></p>
+<p><strong>通过XML数据或者字符串</strong></p>
+</li>
+<li><p><strong>在浏览器端如何得到服务器端响应的XML数据</strong></p>
+<p><strong>XMLHttpRequest对象的responseXMl属性</strong></p>
+</li>
+<li><p><strong>XMLHttpRequest对象在IE和Firefox中创建方式有没有不同？</strong></p>
+<p><strong>有，IE中通过new ActiveXObject()得到，Firefox中通过new XMLHttpRequest()得到</strong></p>
+</li>
+<li><p><strong>介绍一下XMLHttpRequest对象的常用方法和属性（回答的越多越好）</strong></p>
+<p><strong>open(“method”,”URL”) 建立对服务器的调用，第一个参数是HTTP请求 方式可以为GET，POST或任何服务器所支持的您想调用的方式。</strong><br><strong>第二个参数是请求页面的URL。</strong></p>
+<p><strong>send()方法，发送具体请求</strong></p>
+<p><strong>abort()方法，停止当前请求</strong></p>
+<p><strong>readyState属性 请求的状态 有5个可取值</strong><br><strong>0=未初始化 ，1=正在加载,2=以加载，3=交互中，4=完成</strong></p>
+<p><strong>responseText 属性 服务器的响应，表示为一个串</strong></p>
+<p><strong>reponseXML 属性 服务器的响应，表示为XML</strong></p>
+<p><strong>status 服务器的HTTP状态码，200对应ok 400对应not found</strong></p>
+</li>
+<li><p><strong>Ajax的优点和缺点</strong></p>
+<p><strong>使用Ajax的最大优点，就是能在不更新整个页面的前提下维护数据。这使得Web应用程序更为迅捷地回应用户动作，并避免了在网络上发送那些没有改变过的信息。</strong></p>
+<p><strong>对应用Ajax最主要的缺点就是，它可能破坏浏览器后退按钮的正常行为</strong></p>
+<p><strong>因为Ajax中采用了xml技术，所以在Ajax中也可能问到XML的问题</strong></p>
+</li>
+</ol>
+<ol>
+<li><p><strong>介绍一下XMLHttpRequest对象</strong></p>
+<p><strong>通过XMLHttpRequest对象，Web开发人员可以在页面加载以后进行页面的局部更新。</strong></p>
+<p><strong>AJAX开始流行始于Google在2005年使用的”Google Suggest”。</strong></p>
+<p><strong>“Google Suggest”就是使用XMLHttpRequest对象来创建动态的Web接口：</strong></p>
+<p><strong>当用户开始输入google的搜索框，Javascript发送用户输入的字符到服务器，然后服务器返回一个建议列表。</strong></p>
+<p><strong>XMLHttpRequest对象在IE5.0+, Safari 1.2, Mozilla 1.0/Firefox, Opera 8+ 和NetScapt7 开始被支持。</strong></p>
+</li>
+<li><p><strong>AJAX应用和传统Web应用有什么不同？</strong></p>
+<p><strong>在传统的Javascript编程中，如果想得到服务器端数据库或文件上的信息，或者发送客户端信息到服务器，需要建立一个HTML form然后GET或者POST数据到服务器端。用户需要点击”Submit”按钮来发送或者接受数据信息，然后等待服务器响应请求，页面重新加载。</strong></p>
+<p><strong>因为服务器每次都会返回一个新的页面， 所以传统的web应用有可能很慢而且用户交互不友好。</strong></p>
+<p><strong>使用AJAX技术， 就可以使Javascript通过XMLHttpRequest对象直接与服务器进行交互。</strong></p>
+<p><strong>通过HTTP Request， 一个web页面可以发送一个请求到web服务器并且接受web服务器返回的信息(不用重新加载页面)，展示给用户的还是通一个页面，用户感觉页面刷新，也看不到到Javascript后台进行的发送请求和接受响应。</strong></p>
+</li>
+<li><p><strong>AJAX的全称是什么？介绍一下AJAX？</strong></p>
+<p><strong>AJAX的全称是Asynchronous JavaScript And XML.</strong></p>
+<p><strong>AJAX是2005年由Google发起并流行起来的编程方法， AJAX不是一个新的编程语言，但是它是一个使用已有标准的新的编程技术。</strong></p>
+<p><strong>使用AJAX可以创建更好，更快，更用户界面友好的Web应用。</strong></p>
+</li>
+</ol>
+<p><strong>AJAX技术基于Javascript和HTTP Request.</strong></p>
+<ol>
+<li><p><strong>介绍一下XMLHttpRequest对象的常用方法和属性？</strong></p>
+<p><strong>open(“method”,”URL”) 建立对服务器的调用，第一个参数是HTTP请求 方式可以为GET，POST或任何服务器所支持的您想调用的方式。</strong></p>
+<p><strong>第二个参数是请求页面的URL。</strong></p>
+<p><strong>send()方法，发送具体请求</strong><br><strong>readyState属性 请求的状态 有5个可取值 0=未初始化 ，1=正在加载 2=以加载，3=交互中，4=完成</strong></p>
+<p><strong>responseText 属性 服务器的响应，表示为一个串</strong></p>
+<p><strong>reponseXML 属性 服务器的响应，表示为XML</strong></p>
+<p><strong>status 服务器的HTTP状态码，200对应ok 400对应not found</strong></p>
+</li>
+<li><p><strong>.Ajax主要包含了哪些技术？</strong></p>
+<p><strong>Ajax（Asynchronous JavaScript + XML）的定义</strong></p>
+<p><strong>基于web标准（standards-based presentation）XHTML+CSS的表示；</strong></p>
+<p><strong>使 用 DOM（Document Object Model）进行动态显示及交互；</strong></p>
+<p><strong>使用 XML 和 XSLT 进行数据交换及相关操作；</strong></p>
+<p><strong>使用 XMLHttpRequest 进行异步数据查询、检索；</strong></p>
+<p><strong>使用 JavaScript 将所有的东西绑定在一起。英文参见Ajax的提出者Jesse James Garrett的原文,原文题目(Ajax: A New Approach to Web Applications)。</strong></p>
+<p><strong>类似于DHTML或LAMP，AJAX不是指一种单一的技术，而是有机地利用了一系列相关的技术。事实上，一些基于AJAX的“派生/合成”式（derivative/composite）的技术正在出现，如“AFLAX”。</strong></p>
+<p><strong>AJAX的应用使用支持以上技术的web浏览器作为运行平台。这些浏览器目前包括：Mozilla、Firefox、Internet Explorer、Opera、Konqueror及Safari。但是Opera不支持XSL格式对象，也不支持XSLT。</strong></p>
+</li>
+<li><p><strong>AJAX都有哪些有点和缺点？</strong></p>
+<p><strong>1、最大的一点是页面无刷新，用户的体验非常好。</strong></p>
+<p><strong>2、使用异步方式与服务器通信，具有更加迅速的响应能力。</strong></p>
+<p><strong>3、可以把以前一些服务器负担的工作转嫁到客户端，利用客户端闲置的能力来处理，减轻服务器和带宽的负担，节约空间和宽带租用成本。并且减轻服务器的负担，ajax的原则是“按需取数据”，可以最大程度的减少冗余请求，和响应对服务器造成的负担。</strong></p>
+<p><strong>4、基于标准化的并被广泛支持的技术，不需要下载插件或者小程序。</strong></p>
+<p><strong>ajax的缺点</strong></p>
+<p><strong>1、ajax不支持浏览器back按钮。</strong></p>
+<p><strong>2、安全问题 AJAX暴露了与服务器交互的细节。</strong><br><strong>3、不容易调试。</strong> </p>
+</li>
+</ol>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2017/04/15/Ajax 常问问题/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/04/15/Ajax 常问问题/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2017总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+<!--PC版-->
+<div id="SOHUCS" sid="title"></div>
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: 'cyti2Pt4c',
+        conf: 'prod_4d708f848dfd9870b4f74b3811c72c0c'
+    });
+</script>
+</html>
