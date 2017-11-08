@@ -123,101 +123,21 @@
 </nav>
 
         <div id="main" >
-            <div class ="post_page_title_img" style="height: 25rem;background-image: url(../images/dyn1.gif);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >javascript  ajax的总结</h2></a>
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(../images/3123.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >Hello World</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <h1 id="ajax"><a href="#ajax" class="headerlink" title="ajax"></a>ajax</h1><p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="830" height="86" src="//music.163.com/outchain/player?type=2&id=512359558&auto=1&height=66"></iframe></p>
-<ul>
-<li>定义: ajax 就是前端和后端进行交流的一门js技术</li>
-<li><p>作用:</p>
-<ul>
-<li>实现不刷新页面的情况下,更新局部页面</li>
-</ul>
-</li>
-<li><p>分类(ajax 是前端和后端交流的技术,)</p>
-<ul>
-<li><p>同域请求:</p>
-<ul>
-<li>浏览器有同源策略(协议,域名,端口,)一致,就是同源,</li>
-<li>为什么有同源策略?<ul>
-<li>为了用户安全;</li>
-</ul>
-</li>
-<li><p>常规的ajax:</p>
-<ul>
-<li><ol>
-<li>初始化一个ajax对象<blockquote>
-<p>var xhr= new XMLHttpRequest();</p>
-</blockquote>
-</li>
-</ol>
-</li>
-<li><ol>
-<li>创建连接<blockquote>
-<p>xhr.open(“请求方式”,”请求地址”,”同步还是异步”);</p>
-</blockquote>
-</li>
-</ol>
-</li>
-<li><ol>
-<li>发送数据<blockquote>
-<p>xhr.send();</p>
-</blockquote>
-</li>
-</ol>
-</li>
-<li><ol>
-<li>等待并拿到后台给我们的数据<ul>
-<li>等待并且拿到后台给咱们的数据;</li>
-<li>通过检测xhr(ajax对象)的状态 来获取数据</li>
-<li>xhr.readyState=4 ,说明了后台已经开始返回数据,</li>
-<li>xhr.status==200  说明了 所有数据都传输完毕了</li>
-<li>xhr.responseText 通过这个方法拿到数据<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">xhr.onreadystatechange=<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">if</span>(xhr.readyState==<span class="number">4</span>  &amp;&amp; xhr.status==<span class="number">200</span> )&#123;</div><div class="line">                <span class="keyword">var</span> data= xhr.responseText</div><div class="line"></div><div class="line">                       <span class="comment">//根据需求 操作数据</span></div><div class="line">        &#125;</div><div class="line"></div><div class="line"></div><div class="line"> &#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-<li><p>请求方式 :</p>
-<ul>
-<li>get 请求:<ul>
-<li>数据都在地址栏中</li>
-<li>数据大小有限制</li>
-<li>传输速度快</li>
-<li>不安全</li>
-</ul>
-</li>
-<li>post 请求:<ul>
-<li>数据在内部发送,相对安全</li>
-<li>传输速度相对较慢</li>
-<li>数据大小理论无限制</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<pre><code>- 跨域请求(相对于你给你家人以外的人通电话);
-    - 什么是跨域?
-        &gt; 协议,域名,端口,有一项和你当前的不一致,就是跨域;
+                <p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="830" height="86" src="//music.163.com/outchain/player?type=2&id=513428953&auto=0&height=66"></iframe><br>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
-    - 如何实现跨域:
-          1. 动态创建一个带有 src 属性的标签, img, iframe , script(推荐使用)
-          &gt; var script=document.createElement(&quot;script&quot;);
-          2. 让他的src属性等于你要请求的地址
-          &gt; script.src=你要请求的地址?callback=你要的方法
-          3. 把你创建的标签放到文档中;
-          &gt; document.body.appendchild(script);
-          4. 如果你需要对返回的数据操作,你得给他传递一个callback参数,callback=你要的方法
-            - 页面上必须有一个 你要的方法,在这个方法中咱们就可以操作数据;
-</code></pre>
             </div>
 
             <!-- Post Comments -->
@@ -225,7 +145,7 @@
     <!-- 使用 changyan -->
 <div id="changyan-comment">
     <!--PC和WAP自适应版-->
-<div id="SOHUCS" sid="2017/04/13/ajax 总结/"  ></div>
+<div id="SOHUCS" sid="2017/03/27/hello hello/"  ></div>
 <script type="text/javascript">
 (function(){
 var appid = 'cyti2Pt4c';
